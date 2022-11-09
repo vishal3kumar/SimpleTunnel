@@ -17,6 +17,10 @@
 	tunnel_server <port> <config-file>
 	Config file sample: SimpleTunnel/tunnel_server/config.plist
 	
+	run cmd: sudo sysctl net.inet.ip.fw.enable=1
+	
+		 sudo sysctl net.inet.ip.forwarding=1
+	
 ============================================
 
 # SimpleTunnel: Customized Networking Using the NetworkExtension Framework
