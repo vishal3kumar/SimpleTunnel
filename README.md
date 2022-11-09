@@ -1,3 +1,15 @@
+# My Notes:
+
+1) You need to compile 'mac' project, this project include 'Application Extension' -> Packet Tunnel Provider (Please note this is different from System Extension: PacketTunnelProvider). 
+2) Then you need to compile 'tunnel_server' which we have to run at tunnel destination server. This server should be also defined in:
+	serverAddress = "10.213.175.202:8891"
+	tunnelRemoteAddress: "10.213.175.202"
+3) Then run the tunnel server with below config file:
+	tunnel_server <port> <config-file>
+	Config file content: TBD
+	
+============================================
+
 # SimpleTunnel: Customized Networking Using the NetworkExtension Framework
 
 The SimpleTunnel project contains working examples of the four extension points provided by the Network Extension framework:
