@@ -1,0 +1,10 @@
+framework module SimpleTunnelServices {
+  umbrella header "SimpleTunnelServices.h"
+
+  export *
+  module * { export * }
+}
+
+module SimpleTunnelServices.__Swift {
+    exclude header "SimpleTunnelServices-Swift.h"
+}

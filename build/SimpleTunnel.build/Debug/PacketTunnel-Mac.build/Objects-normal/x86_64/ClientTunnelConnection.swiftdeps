@@ -1,0 +1,496 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ClientTunnelConnectionDelegate"
+- "ClientTunnelConnection"
+provides-nominal:
+- "16PacketTunnel_Mac06ClientB18ConnectionDelegateP"
+- "16PacketTunnel_Mac06ClientB10ConnectionC"
+provides-member:
+- ["16PacketTunnel_Mac06ClientB18ConnectionDelegateP", ""]
+- ["16PacketTunnel_Mac06ClientB10ConnectionC", ""]
+provides-dynamic-lookup:
+- "delegate"
+- "handleOpenCompleted"
+- "handlePackets"
+- "open"
+- "packetFlow"
+- "sendPackets"
+- "startHandlingPackets"
+depends-top-level:
+- !private "=="
+- "AnyObject"
+- "AssignmentPrecedence"
+- "CastingPrecedence"
+- "ClientTunnel"
+- "ClientTunnelConnection"
+- "ClientTunnelConnectionDelegate"
+- "Connection"
+- "Data"
+- !private "Dictionary"
+- "Error"
+- !private "Int"
+- "NEPacketTunnelFlow"
+- "NSError"
+- "NSNumber"
+- "NSObject"
+- "NSString"
+- !private "SimpleTunnelError"
+- "TunnelConnectionOpenResult"
+- !private "TunnelLayer"
+- !private "TunnelMessageKey"
+- !private "arc4random"
+- !private "createMessagePropertiesForConnection"
+- !private "delegate"
+- !private "identifier"
+- !private "packetFlow"
+- !private "tunnel"
+depends-member:
+- !private ["s18AdditiveArithmeticP", ""]
+- !private ["s18AdditiveArithmeticP", "init"]
+- !private ["Sz", ""]
+- !private ["Sz", "init"]
+- !private ["8CloudKit21CKRecordValueProtocolP", "init"]
+- !private ["s7CVarArgP", "Int"]
+- !private ["s7CVarArgP", "SimpleTunnelError"]
+- !private ["s7CVarArgP", "TunnelLayer"]
+- !private ["s7CVarArgP", "TunnelMessageKey"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "arc4random"]
+- !private ["s7CVarArgP", "createMessagePropertiesForConnection"]
+- !private ["s7CVarArgP", "delegate"]
+- !private ["s7CVarArgP", "handlePackets"]
+- !private ["s7CVarArgP", "identifier"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "packetFlow"]
+- !private ["s7CVarArgP", "readPackets"]
+- !private ["s7CVarArgP", "sendMessage"]
+- !private ["s7CVarArgP", "sendPackets"]
+- !private ["s7CVarArgP", "startHandlingPackets"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "tunnel"]
+- !private ["s7CVarArgP", "writePackets"]
+- !private ["20SimpleTunnelServices06ClientB0C", "sendMessage"]
+- ["16PacketTunnel_Mac06ClientB10ConnectionC", "AnyObject"]
+- ["16PacketTunnel_Mac06ClientB10ConnectionC", "ClientTunnel"]
+- ["16PacketTunnel_Mac06ClientB10ConnectionC", "ClientTunnelConnectionDelegate"]
+- ["16PacketTunnel_Mac06ClientB10ConnectionC", "Data"]
+- !private ["16PacketTunnel_Mac06ClientB10ConnectionC", "Int"]
+- ["16PacketTunnel_Mac06ClientB10ConnectionC", "NEPacketTunnelFlow"]
+- !private ["16PacketTunnel_Mac06ClientB10ConnectionC", "NSError"]
+- ["16PacketTunnel_Mac06ClientB10ConnectionC", "NSNumber"]
+- ["16PacketTunnel_Mac06ClientB10ConnectionC", "NSObject"]
+- !private ["16PacketTunnel_Mac06ClientB10ConnectionC", "NSString"]
+- !private ["16PacketTunnel_Mac06ClientB10ConnectionC", "SimpleTunnelError"]
+- ["16PacketTunnel_Mac06ClientB10ConnectionC", "TunnelConnectionOpenResult"]
+- !private ["16PacketTunnel_Mac06ClientB10ConnectionC", "TunnelLayer"]
+- !private ["16PacketTunnel_Mac06ClientB10ConnectionC", "TunnelMessageKey"]
+- ["16PacketTunnel_Mac06ClientB10ConnectionC", ""]
+- !private ["16PacketTunnel_Mac06ClientB10ConnectionC", "arc4random"]
+- !private ["16PacketTunnel_Mac06ClientB10ConnectionC", "createMessagePropertiesForConnection"]
+- ["16PacketTunnel_Mac06ClientB10ConnectionC", "deinit"]
+- ["16PacketTunnel_Mac06ClientB10ConnectionC", "delegate"]
+- ["16PacketTunnel_Mac06ClientB10ConnectionC", "handleOpenCompleted"]
+- ["16PacketTunnel_Mac06ClientB10ConnectionC", "handlePackets"]
+- !private ["16PacketTunnel_Mac06ClientB10ConnectionC", "identifier"]
+- ["16PacketTunnel_Mac06ClientB10ConnectionC", "init"]
+- ["16PacketTunnel_Mac06ClientB10ConnectionC", "open"]
+- ["16PacketTunnel_Mac06ClientB10ConnectionC", "packetFlow"]
+- ["16PacketTunnel_Mac06ClientB10ConnectionC", "sendPackets"]
+- ["16PacketTunnel_Mac06ClientB10ConnectionC", "startHandlingPackets"]
+- !private ["16PacketTunnel_Mac06ClientB10ConnectionC", "tunnel"]
+- ["16PacketTunnel_Mac06ClientB18ConnectionDelegateP", "AnyObject"]
+- ["16PacketTunnel_Mac06ClientB18ConnectionDelegateP", "ClientTunnelConnection"]
+- ["16PacketTunnel_Mac06ClientB18ConnectionDelegateP", "Error"]
+- ["16PacketTunnel_Mac06ClientB18ConnectionDelegateP", "NSObject"]
+- ["16PacketTunnel_Mac06ClientB18ConnectionDelegateP", "tunnelConnectionDidClose"]
+- ["16PacketTunnel_Mac06ClientB18ConnectionDelegateP", "tunnelConnectionDidOpen"]
+- !private ["Sl", "subscript"]
+- !private ["SL", ""]
+- !private ["SL", "init"]
+- ["20SimpleTunnelServices10ConnectionC", "AnyObject"]
+- ["20SimpleTunnelServices10ConnectionC", "ClientTunnel"]
+- ["20SimpleTunnelServices10ConnectionC", "ClientTunnelConnectionDelegate"]
+- ["20SimpleTunnelServices10ConnectionC", "Data"]
+- !private ["20SimpleTunnelServices10ConnectionC", "Int"]
+- ["20SimpleTunnelServices10ConnectionC", "NEPacketTunnelFlow"]
+- !private ["20SimpleTunnelServices10ConnectionC", "NSError"]
+- ["20SimpleTunnelServices10ConnectionC", "NSNumber"]
+- ["20SimpleTunnelServices10ConnectionC", "NSObject"]
+- !private ["20SimpleTunnelServices10ConnectionC", "NSString"]
+- !private ["20SimpleTunnelServices10ConnectionC", "SimpleTunnelError"]
+- ["20SimpleTunnelServices10ConnectionC", "TunnelConnectionOpenResult"]
+- !private ["20SimpleTunnelServices10ConnectionC", "TunnelLayer"]
+- !private ["20SimpleTunnelServices10ConnectionC", "TunnelMessageKey"]
+- ["20SimpleTunnelServices10ConnectionC", ""]
+- !private ["20SimpleTunnelServices10ConnectionC", "arc4random"]
+- !private ["20SimpleTunnelServices10ConnectionC", "createMessagePropertiesForConnection"]
+- ["20SimpleTunnelServices10ConnectionC", "delegate"]
+- ["20SimpleTunnelServices10ConnectionC", "handleOpenCompleted"]
+- ["20SimpleTunnelServices10ConnectionC", "handlePackets"]
+- !private ["20SimpleTunnelServices10ConnectionC", "identifier"]
+- ["20SimpleTunnelServices10ConnectionC", "init"]
+- ["20SimpleTunnelServices10ConnectionC", "open"]
+- ["20SimpleTunnelServices10ConnectionC", "packetFlow"]
+- ["20SimpleTunnelServices10ConnectionC", "sendPackets"]
+- ["20SimpleTunnelServices10ConnectionC", "startHandlingPackets"]
+- !private ["20SimpleTunnelServices10ConnectionC", "tunnel"]
+- !private ["s28CustomDebugStringConvertibleP", "Int"]
+- !private ["s28CustomDebugStringConvertibleP", "SimpleTunnelError"]
+- !private ["s28CustomDebugStringConvertibleP", "TunnelLayer"]
+- !private ["s28CustomDebugStringConvertibleP", "TunnelMessageKey"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "arc4random"]
+- !private ["s28CustomDebugStringConvertibleP", "createMessagePropertiesForConnection"]
+- !private ["s28CustomDebugStringConvertibleP", "delegate"]
+- !private ["s28CustomDebugStringConvertibleP", "handlePackets"]
+- !private ["s28CustomDebugStringConvertibleP", "identifier"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "packetFlow"]
+- !private ["s28CustomDebugStringConvertibleP", "readPackets"]
+- !private ["s28CustomDebugStringConvertibleP", "sendMessage"]
+- !private ["s28CustomDebugStringConvertibleP", "sendPackets"]
+- !private ["s28CustomDebugStringConvertibleP", "startHandlingPackets"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "tunnel"]
+- !private ["s28CustomDebugStringConvertibleP", "writePackets"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "Int"]
+- !private ["s23CustomStringConvertibleP", "SimpleTunnelError"]
+- !private ["s23CustomStringConvertibleP", "TunnelLayer"]
+- !private ["s23CustomStringConvertibleP", "TunnelMessageKey"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "arc4random"]
+- !private ["s23CustomStringConvertibleP", "createMessagePropertiesForConnection"]
+- !private ["s23CustomStringConvertibleP", "delegate"]
+- !private ["s23CustomStringConvertibleP", "handlePackets"]
+- !private ["s23CustomStringConvertibleP", "identifier"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "open"]
+- !private ["s23CustomStringConvertibleP", "packetFlow"]
+- !private ["s23CustomStringConvertibleP", "packets"]
+- !private ["s23CustomStringConvertibleP", "readPackets"]
+- !private ["s23CustomStringConvertibleP", "sendMessage"]
+- !private ["s23CustomStringConvertibleP", "sendPackets"]
+- !private ["s23CustomStringConvertibleP", "startHandlingPackets"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "tunnel"]
+- !private ["s23CustomStringConvertibleP", "writePackets"]
+- !private ["Se", "init"]
+- !private ["Se", "subscript"]
+- !private ["SD", "subscript"]
+- !private ["SE", "init"]
+- !private ["SE", "subscript"]
+- !private ["SQ", "=="]
+- !private ["SQ", "Configuration"]
+- !private ["SQ", "Int"]
+- !private ["SQ", "Packets"]
+- !private ["SQ", "Protocols"]
+- !private ["SQ", "SimpleTunnelError"]
+- !private ["SQ", "TunnelLayer"]
+- !private ["SQ", "TunnelMessageKey"]
+- !private ["SQ", "TunnelType"]
+- ["SQ", ""]
+- !private ["SQ", "arc4random"]
+- !private ["SQ", "badConnection"]
+- !private ["SQ", "createMessagePropertiesForConnection"]
+- !private ["SQ", "delegate"]
+- !private ["SQ", "handlePackets"]
+- !private ["SQ", "identifier"]
+- !private ["SQ", "init"]
+- !private ["SQ", "ip"]
+- !private ["SQ", "open"]
+- !private ["SQ", "packetFlow"]
+- !private ["SQ", "packets"]
+- !private ["SQ", "rawValue"]
+- !private ["SQ", "readPackets"]
+- !private ["SQ", "sendMessage"]
+- !private ["SQ", "sendPackets"]
+- !private ["SQ", "startHandlingPackets"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "success"]
+- !private ["SQ", "tunnel"]
+- !private ["SQ", "writePackets"]
+- !private ["s5ErrorP", "badConnection"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "Key"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "Value"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "init"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- !private ["s27ExpressibleByIntegerLiteralP", ""]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s17FixedWidthIntegerP", "init"]
+- !private ["SH", "Configuration"]
+- !private ["SH", "Int"]
+- !private ["SH", "Packets"]
+- !private ["SH", "Protocols"]
+- !private ["SH", "SimpleTunnelError"]
+- !private ["SH", "TunnelLayer"]
+- !private ["SH", "TunnelMessageKey"]
+- !private ["SH", "TunnelType"]
+- ["SH", ""]
+- !private ["SH", "arc4random"]
+- !private ["SH", "badConnection"]
+- !private ["SH", "createMessagePropertiesForConnection"]
+- !private ["SH", "delegate"]
+- !private ["SH", "handlePackets"]
+- !private ["SH", "identifier"]
+- !private ["SH", "init"]
+- !private ["SH", "ip"]
+- !private ["SH", "open"]
+- !private ["SH", "packetFlow"]
+- !private ["SH", "packets"]
+- !private ["SH", "rawValue"]
+- !private ["SH", "readPackets"]
+- !private ["SH", "sendMessage"]
+- !private ["SH", "sendPackets"]
+- !private ["SH", "startHandlingPackets"]
+- !private ["SH", "subscript"]
+- !private ["SH", "success"]
+- !private ["SH", "tunnel"]
+- !private ["SH", "writePackets"]
+- !private ["Si", "init"]
+- !private ["s25LosslessStringConvertibleP", ""]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["So18NEPacketTunnelFlowC", "readPackets"]
+- !private ["So18NEPacketTunnelFlowC", "writePackets"]
+- ["So8NSCodingP", ""]
+- ["So8NSObjectC", "AnyObject"]
+- ["So8NSObjectC", "ClientTunnel"]
+- ["So8NSObjectC", "ClientTunnelConnectionDelegate"]
+- ["So8NSObjectC", "Data"]
+- !private ["So8NSObjectC", "Int"]
+- ["So8NSObjectC", "NEPacketTunnelFlow"]
+- !private ["So8NSObjectC", "NSError"]
+- ["So8NSObjectC", "NSNumber"]
+- ["So8NSObjectC", "NSObject"]
+- !private ["So8NSObjectC", "NSString"]
+- !private ["So8NSObjectC", "SimpleTunnelError"]
+- ["So8NSObjectC", "TunnelConnectionOpenResult"]
+- !private ["So8NSObjectC", "TunnelLayer"]
+- !private ["So8NSObjectC", "TunnelMessageKey"]
+- ["So8NSObjectC", ""]
+- !private ["So8NSObjectC", "arc4random"]
+- !private ["So8NSObjectC", "createMessagePropertiesForConnection"]
+- ["So8NSObjectC", "delegate"]
+- ["So8NSObjectC", "handleOpenCompleted"]
+- ["So8NSObjectC", "handlePackets"]
+- !private ["So8NSObjectC", "identifier"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "open"]
+- ["So8NSObjectC", "packetFlow"]
+- !private ["So8NSObjectC", "readPackets"]
+- !private ["So8NSObjectC", "readPacketsWithCompletionHandler"]
+- !private ["So8NSObjectC", "sendMessage"]
+- ["So8NSObjectC", "sendPackets"]
+- ["So8NSObjectC", "startHandlingPackets"]
+- !private ["So8NSObjectC", "tunnel"]
+- !private ["So8NSObjectC", "writePackets"]
+- ["So8NSObjectP", "AnyObject"]
+- ["So8NSObjectP", "ClientTunnel"]
+- ["So8NSObjectP", "ClientTunnelConnectionDelegate"]
+- ["So8NSObjectP", "Data"]
+- !private ["So8NSObjectP", "Int"]
+- ["So8NSObjectP", "NEPacketTunnelFlow"]
+- !private ["So8NSObjectP", "NSError"]
+- ["So8NSObjectP", "NSNumber"]
+- ["So8NSObjectP", "NSObject"]
+- !private ["So8NSObjectP", "NSString"]
+- !private ["So8NSObjectP", "SimpleTunnelError"]
+- ["So8NSObjectP", "TunnelConnectionOpenResult"]
+- !private ["So8NSObjectP", "TunnelLayer"]
+- !private ["So8NSObjectP", "TunnelMessageKey"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "arc4random"]
+- !private ["So8NSObjectP", "createMessagePropertiesForConnection"]
+- ["So8NSObjectP", "delegate"]
+- ["So8NSObjectP", "handleOpenCompleted"]
+- ["So8NSObjectP", "handlePackets"]
+- !private ["So8NSObjectP", "identifier"]
+- ["So8NSObjectP", "init"]
+- ["So8NSObjectP", "open"]
+- ["So8NSObjectP", "packetFlow"]
+- !private ["So8NSObjectP", "readPackets"]
+- !private ["So8NSObjectP", "readPacketsWithCompletionHandler"]
+- !private ["So8NSObjectP", "sendMessage"]
+- ["So8NSObjectP", "sendPackets"]
+- ["So8NSObjectP", "startHandlingPackets"]
+- !private ["So8NSObjectP", "tunnel"]
+- !private ["So8NSObjectP", "writePackets"]
+- !private ["Sj", ""]
+- !private ["Sj", "init"]
+- !private ["SY", "Configuration"]
+- !private ["SY", "Packets"]
+- !private ["SY", "Protocols"]
+- !private ["SY", "TunnelType"]
+- !private ["SY", "init"]
+- !private ["SY", "ip"]
+- !private ["SY", "open"]
+- !private ["SY", "packets"]
+- !private ["SY", "rawValue"]
+- !private ["SY", "success"]
+- !private ["s10SIMDScalarP", "init"]
+- !private ["ST", ""]
+- !private ["ST", "subscript"]
+- !private ["SZ", "init"]
+- !private ["s13SignedNumericP", ""]
+- !private ["s13SignedNumericP", "init"]
+- !private ["20SimpleTunnelServices0aB5ErrorO", "badConnection"]
+- !private ["Sx", ""]
+- !private ["Sx", "init"]
+- ["20SimpleTunnelServices0B0C", ""]
+- !private ["20SimpleTunnelServices0B0C", "sendMessage"]
+- !private ["20SimpleTunnelServices0B7CommandO", "open"]
+- !private ["20SimpleTunnelServices0B7CommandO", "packets"]
+- !private ["20SimpleTunnelServices0B20ConnectionOpenResultO", "success"]
+- !private ["20SimpleTunnelServices0B5LayerO", "ip"]
+- !private ["20SimpleTunnelServices0B5LayerO", "rawValue"]
+- !private ["20SimpleTunnelServices0B10MessageKeyO", "Configuration"]
+- !private ["20SimpleTunnelServices0B10MessageKeyO", "Packets"]
+- !private ["20SimpleTunnelServices0B10MessageKeyO", "Protocols"]
+- !private ["20SimpleTunnelServices0B10MessageKeyO", "TunnelType"]
+- !private ["20SimpleTunnelServices0B10MessageKeyO", "rawValue"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Int"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "SimpleTunnelError"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "TunnelLayer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "TunnelMessageKey"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "arc4random"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "createMessagePropertiesForConnection"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "handlePackets"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "identifier"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "packetFlow"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "readPackets"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "sendMessage"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "sendPackets"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "startHandlingPackets"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tunnel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "writePackets"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Int"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "SimpleTunnelError"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "TunnelLayer"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "TunnelMessageKey"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "arc4random"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "createMessagePropertiesForConnection"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "delegate"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "handlePackets"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "identifier"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "packetFlow"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "readPackets"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "sendMessage"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "sendPackets"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "startHandlingPackets"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "tunnel"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "writePackets"]
+- !private ["s21_ObjectiveCBridgeableP", "_ObjectiveCType"]
+- !private ["s21_ObjectiveCBridgeableP", "_bridgeToObjectiveC"]
+- !private ["s21_ObjectiveCBridgeableP", "_conditionallyBridgeFromObjectiveC"]
+- !private ["s21_ObjectiveCBridgeableP", "_forceBridgeFromObjectiveC"]
+- !private ["s21_ObjectiveCBridgeableP", "_unconditionallyBridgeFromObjectiveC"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+depends-nominal:
+- !private "s18AdditiveArithmeticP"
+- !private "Sz"
+- !private "8CloudKit21CKRecordValueProtocolP"
+- "s7CVarArgP"
+- !private "20SimpleTunnelServices06ClientB0C"
+- "16PacketTunnel_Mac06ClientB10ConnectionC"
+- "16PacketTunnel_Mac06ClientB18ConnectionDelegateP"
+- !private "Sl"
+- !private "SL"
+- "20SimpleTunnelServices10ConnectionC"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SD"
+- !private "SE"
+- "SQ"
+- !private "s5ErrorP"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s17FixedWidthIntegerP"
+- "SH"
+- !private "Si"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "So18NEPacketTunnelFlowC"
+- "So8NSCodingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "Sj"
+- !private "SY"
+- !private "s10SIMDScalarP"
+- !private "ST"
+- !private "SZ"
+- !private "s13SignedNumericP"
+- !private "20SimpleTunnelServices0aB5ErrorO"
+- !private "Sx"
+- "20SimpleTunnelServices0B0C"
+- !private "20SimpleTunnelServices0B7CommandO"
+- !private "20SimpleTunnelServices0B20ConnectionOpenResultO"
+- !private "20SimpleTunnelServices0B5LayerO"
+- !private "20SimpleTunnelServices0B10MessageKeyO"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/XPC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreData.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreImage.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Combine.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/QuartzCore.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Network.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Metal.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Darwin.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreLocation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Foundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/amit/Desktop/VISHAL/POC/SimpleTunnel-MacOs/build/Debug/SimpleTunnelServices.framework/Modules/SimpleTunnelServices.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/IOKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CloudKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/AppKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/amit/Desktop/VISHAL/POC/SimpleTunnel-MacOs/SimpleTunnelServicesMac/SimpleTunnelServices.h"
+- "/Users/amit/Desktop/VISHAL/POC/SimpleTunnel-MacOs/build/Debug/SimpleTunnelServices.framework/Headers/SimpleTunnelServices-Swift.h"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/mach-o/dyld.modulemap"
+- "/Users/amit/Desktop/VISHAL/POC/SimpleTunnel-MacOs/build/SimpleTunnel.build/Debug/SimpleTunnelServicesMac.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/mach-o/compact_unwind_encoding.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/Network.framework/Headers/Network.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/NetworkExtension.framework/Headers/NetworkExtension.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/CloudKit.framework/Headers/CloudKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "de29018bb6e2c34fd137b4b8cb6b3b21"

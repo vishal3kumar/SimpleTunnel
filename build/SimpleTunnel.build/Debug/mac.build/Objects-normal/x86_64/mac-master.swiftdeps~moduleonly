@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
+options: "b5111ab7e7174d302027a859d2e5574c"
+build_time: [1667813488, 797075000]
+inputs:
+  "/Users/amit/Desktop/VISHAL/POC/SimpleTunnel-MacOs/mac/ViewController.swift": [1667813488, 596595539]
+  "/Users/amit/Desktop/VISHAL/POC/SimpleTunnel-MacOs/mac/AppDelegate.swift": [1667626641, 827299340]

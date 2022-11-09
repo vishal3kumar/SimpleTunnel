@@ -1,0 +1,11 @@
+framework module SimpleTunnelServices {
+  umbrella header "SimpleTunnelServices.h"
+
+  export *
+  module * { export * }
+}
+
+module SimpleTunnelServices.Swift {
+    header "SimpleTunnelServices-Swift.h"
+    requires objc
+}

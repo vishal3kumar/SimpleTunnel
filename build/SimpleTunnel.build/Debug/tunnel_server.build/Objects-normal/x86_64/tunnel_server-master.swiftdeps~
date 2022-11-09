@@ -1,0 +1,14 @@
+version: "Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
+options: "c398b0686c3921663d2fed86289ae706"
+build_time: [1667804045, 511449000]
+inputs:
+  "/Users/amit/Desktop/VISHAL/POC/SimpleTunnel-MacOs/tunnel_server/ServerTunnel.swift": [1667626657, 831913362]
+  "/Users/amit/Desktop/VISHAL/POC/SimpleTunnel-MacOs/SimpleTunnelServices/Tunnel.swift": [1667626641, 13860178]
+  "/Users/amit/Desktop/VISHAL/POC/SimpleTunnel-MacOs/tunnel_server/ServerConnection.swift": [1667626657, 769440564]
+  "/Users/amit/Desktop/VISHAL/POC/SimpleTunnel-MacOs/SimpleTunnelServices/util.swift": [1667626640, 878679641]
+  "/Users/amit/Desktop/VISHAL/POC/SimpleTunnel-MacOs/tunnel_server/ServerTunnelConnection.swift": [1667626657, 898693745]
+  "/Users/amit/Desktop/VISHAL/POC/SimpleTunnel-MacOs/tunnel_server/AddressPool.swift": [1667626657, 698793576]
+  "/Users/amit/Desktop/VISHAL/POC/SimpleTunnel-MacOs/tunnel_server/main.swift": [1667626657, 972825931]
+  "/Users/amit/Desktop/VISHAL/POC/SimpleTunnel-MacOs/tunnel_server/ServerConfiguration.swift": [1667626657, 732949107]
+  "/Users/amit/Desktop/VISHAL/POC/SimpleTunnel-MacOs/tunnel_server/UDPServerConnection.swift": [1667626657, 926141469]
+  "/Users/amit/Desktop/VISHAL/POC/SimpleTunnel-MacOs/SimpleTunnelServices/Connection.swift": [1667626640, 418924874]

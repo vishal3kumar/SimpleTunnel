@@ -1,0 +1,456 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "TunnelConnectionCloseDirection"
+- "TunnelConnectionOpenResult"
+- "Connection"
+provides-nominal:
+- "20SimpleTunnelServices0B24ConnectionCloseDirectionO"
+- "20SimpleTunnelServices0B20ConnectionOpenResultO"
+- "20SimpleTunnelServices10ConnectionC"
+provides-member:
+- ["20SimpleTunnelServices0B24ConnectionCloseDirectionO", ""]
+- ["20SimpleTunnelServices0B20ConnectionOpenResultO", ""]
+- ["20SimpleTunnelServices10ConnectionC", ""]
+provides-dynamic-lookup:
+- "abort"
+- "closeConnection"
+- "currentCloseDirection"
+- "handleOpenCompleted"
+- "identifier"
+- "isClosedCompletely"
+- "isClosedForRead"
+- "isClosedForWrite"
+- "isExclusiveTunnel"
+- "resume"
+- "savedData"
+- "sendData"
+- "sendDataWithEndPoint"
+- "sendPackets"
+- "setNewTunnel"
+- "suspend"
+- "tunnel"
+depends-top-level:
+- !private "!="
+- !private "&&"
+- "=="
+- "AnyObject"
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- "Connection"
+- "CustomStringConvertible"
+- "Data"
+- "FloatLiteralType"
+- "Int"
+- "IntegerLiteralType"
+- "NSNumber"
+- "NSObject"
+- "SavedData"
+- "String"
+- !private "StringLiteralType"
+- "Tunnel"
+- "TunnelConnectionCloseDirection"
+- "TunnelConnectionOpenResult"
+- !private "currentCloseDirection"
+- !private "identifier"
+- !private "isExclusiveTunnel"
+- !private "savedData"
+- !private "tunnel"
+- !private "~="
+depends-member:
+- ["s7CVarArgP", "SavedData"]
+- ["s7CVarArgP", "TunnelConnectionCloseDirection"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "abort"]
+- !private ["s7CVarArgP", "addConnection"]
+- !private ["s7CVarArgP", "closeTunnel"]
+- !private ["s7CVarArgP", "currentCloseDirection"]
+- !private ["s7CVarArgP", "dropConnection"]
+- !private ["s7CVarArgP", "handleOpenCompleted"]
+- !private ["s7CVarArgP", "identifier"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isExclusiveTunnel"]
+- !private ["s7CVarArgP", "resume"]
+- !private ["s7CVarArgP", "savedData"]
+- !private ["s7CVarArgP", "sendData"]
+- !private ["s7CVarArgP", "sendDataWithEndPoint"]
+- !private ["s7CVarArgP", "sendPackets"]
+- !private ["s7CVarArgP", "setNewTunnel"]
+- !private ["s7CVarArgP", "suspend"]
+- !private ["s7CVarArgP", "tunnel"]
+- ["20SimpleTunnelServices10ConnectionC", "AnyObject"]
+- ["20SimpleTunnelServices10ConnectionC", "Bool"]
+- ["20SimpleTunnelServices10ConnectionC", "Data"]
+- ["20SimpleTunnelServices10ConnectionC", "Int"]
+- ["20SimpleTunnelServices10ConnectionC", "NSNumber"]
+- ["20SimpleTunnelServices10ConnectionC", "NSObject"]
+- ["20SimpleTunnelServices10ConnectionC", "SavedData"]
+- ["20SimpleTunnelServices10ConnectionC", "String"]
+- ["20SimpleTunnelServices10ConnectionC", "Tunnel"]
+- ["20SimpleTunnelServices10ConnectionC", "TunnelConnectionCloseDirection"]
+- ["20SimpleTunnelServices10ConnectionC", "TunnelConnectionOpenResult"]
+- ["20SimpleTunnelServices10ConnectionC", ""]
+- ["20SimpleTunnelServices10ConnectionC", "abort"]
+- ["20SimpleTunnelServices10ConnectionC", "closeConnection"]
+- ["20SimpleTunnelServices10ConnectionC", "currentCloseDirection"]
+- ["20SimpleTunnelServices10ConnectionC", "deinit"]
+- ["20SimpleTunnelServices10ConnectionC", "handleOpenCompleted"]
+- ["20SimpleTunnelServices10ConnectionC", "identifier"]
+- ["20SimpleTunnelServices10ConnectionC", "init"]
+- ["20SimpleTunnelServices10ConnectionC", "isClosedCompletely"]
+- ["20SimpleTunnelServices10ConnectionC", "isClosedForRead"]
+- ["20SimpleTunnelServices10ConnectionC", "isClosedForWrite"]
+- ["20SimpleTunnelServices10ConnectionC", "isExclusiveTunnel"]
+- ["20SimpleTunnelServices10ConnectionC", "resume"]
+- ["20SimpleTunnelServices10ConnectionC", "savedData"]
+- ["20SimpleTunnelServices10ConnectionC", "sendData"]
+- ["20SimpleTunnelServices10ConnectionC", "sendDataWithEndPoint"]
+- ["20SimpleTunnelServices10ConnectionC", "sendPackets"]
+- ["20SimpleTunnelServices10ConnectionC", "setNewTunnel"]
+- ["20SimpleTunnelServices10ConnectionC", "suspend"]
+- ["20SimpleTunnelServices10ConnectionC", "tunnel"]
+- ["s28CustomDebugStringConvertibleP", "SavedData"]
+- ["s28CustomDebugStringConvertibleP", "TunnelConnectionCloseDirection"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "abort"]
+- !private ["s28CustomDebugStringConvertibleP", "addConnection"]
+- !private ["s28CustomDebugStringConvertibleP", "closeTunnel"]
+- !private ["s28CustomDebugStringConvertibleP", "currentCloseDirection"]
+- !private ["s28CustomDebugStringConvertibleP", "dropConnection"]
+- !private ["s28CustomDebugStringConvertibleP", "handleOpenCompleted"]
+- !private ["s28CustomDebugStringConvertibleP", "identifier"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isExclusiveTunnel"]
+- !private ["s28CustomDebugStringConvertibleP", "resume"]
+- !private ["s28CustomDebugStringConvertibleP", "savedData"]
+- !private ["s28CustomDebugStringConvertibleP", "sendData"]
+- !private ["s28CustomDebugStringConvertibleP", "sendDataWithEndPoint"]
+- !private ["s28CustomDebugStringConvertibleP", "sendPackets"]
+- !private ["s28CustomDebugStringConvertibleP", "setNewTunnel"]
+- !private ["s28CustomDebugStringConvertibleP", "suspend"]
+- !private ["s28CustomDebugStringConvertibleP", "tunnel"]
+- ["s23CustomStringConvertibleP", "=="]
+- ["s23CustomStringConvertibleP", "Default_RawValue"]
+- ["s23CustomStringConvertibleP", "RawValue"]
+- ["s23CustomStringConvertibleP", "SavedData"]
+- ["s23CustomStringConvertibleP", "TunnelConnectionCloseDirection"]
+- ["s23CustomStringConvertibleP", ""]
+- ["s23CustomStringConvertibleP", "_Default_RawValue"]
+- ["s23CustomStringConvertibleP", "_rawHashValue"]
+- !private ["s23CustomStringConvertibleP", "abort"]
+- !private ["s23CustomStringConvertibleP", "addConnection"]
+- ["s23CustomStringConvertibleP", "all"]
+- !private ["s23CustomStringConvertibleP", "closeTunnel"]
+- !private ["s23CustomStringConvertibleP", "currentCloseDirection"]
+- ["s23CustomStringConvertibleP", "description"]
+- !private ["s23CustomStringConvertibleP", "dropConnection"]
+- !private ["s23CustomStringConvertibleP", "handleOpenCompleted"]
+- ["s23CustomStringConvertibleP", "hash"]
+- ["s23CustomStringConvertibleP", "hashValue"]
+- !private ["s23CustomStringConvertibleP", "identifier"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isExclusiveTunnel"]
+- ["s23CustomStringConvertibleP", "none"]
+- ["s23CustomStringConvertibleP", "rawValue"]
+- ["s23CustomStringConvertibleP", "read"]
+- !private ["s23CustomStringConvertibleP", "resume"]
+- !private ["s23CustomStringConvertibleP", "savedData"]
+- !private ["s23CustomStringConvertibleP", "sendData"]
+- !private ["s23CustomStringConvertibleP", "sendDataWithEndPoint"]
+- !private ["s23CustomStringConvertibleP", "sendPackets"]
+- !private ["s23CustomStringConvertibleP", "setNewTunnel"]
+- !private ["s23CustomStringConvertibleP", "suspend"]
+- !private ["s23CustomStringConvertibleP", "tunnel"]
+- ["s23CustomStringConvertibleP", "write"]
+- ["SQ", "=="]
+- ["SQ", "Default_RawValue"]
+- ["SQ", "RawValue"]
+- ["SQ", "SavedData"]
+- ["SQ", "TunnelConnectionCloseDirection"]
+- ["SQ", ""]
+- ["SQ", "_Default_RawValue"]
+- ["SQ", "_rawHashValue"]
+- !private ["SQ", "abort"]
+- !private ["SQ", "addConnection"]
+- ["SQ", "all"]
+- !private ["SQ", "closeTunnel"]
+- !private ["SQ", "currentCloseDirection"]
+- ["SQ", "description"]
+- !private ["SQ", "dropConnection"]
+- !private ["SQ", "handleOpenCompleted"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- !private ["SQ", "identifier"]
+- ["SQ", "init"]
+- !private ["SQ", "isExclusiveTunnel"]
+- ["SQ", "none"]
+- ["SQ", "rawValue"]
+- ["SQ", "read"]
+- !private ["SQ", "resume"]
+- !private ["SQ", "savedData"]
+- !private ["SQ", "sendData"]
+- !private ["SQ", "sendDataWithEndPoint"]
+- !private ["SQ", "sendPackets"]
+- !private ["SQ", "setNewTunnel"]
+- !private ["SQ", "suspend"]
+- !private ["SQ", "tunnel"]
+- ["SQ", "write"]
+- ["SH", "=="]
+- ["SH", "Default_RawValue"]
+- ["SH", "RawValue"]
+- ["SH", "SavedData"]
+- ["SH", "TunnelConnectionCloseDirection"]
+- ["SH", ""]
+- ["SH", "_Default_RawValue"]
+- ["SH", "_rawHashValue"]
+- !private ["SH", "abort"]
+- !private ["SH", "addConnection"]
+- ["SH", "all"]
+- !private ["SH", "closeTunnel"]
+- !private ["SH", "currentCloseDirection"]
+- ["SH", "description"]
+- !private ["SH", "dropConnection"]
+- !private ["SH", "handleOpenCompleted"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- !private ["SH", "identifier"]
+- ["SH", "init"]
+- !private ["SH", "isExclusiveTunnel"]
+- ["SH", "none"]
+- ["SH", "rawValue"]
+- ["SH", "read"]
+- !private ["SH", "resume"]
+- !private ["SH", "savedData"]
+- !private ["SH", "sendData"]
+- !private ["SH", "sendDataWithEndPoint"]
+- !private ["SH", "sendPackets"]
+- !private ["SH", "setNewTunnel"]
+- !private ["SH", "suspend"]
+- !private ["SH", "tunnel"]
+- ["SH", "write"]
+- ["So8NSCodingP", ""]
+- ["So8NSObjectC", "AnyObject"]
+- ["So8NSObjectC", "Bool"]
+- ["So8NSObjectC", "Data"]
+- ["So8NSObjectC", "Int"]
+- ["So8NSObjectC", "NSNumber"]
+- ["So8NSObjectC", "NSObject"]
+- ["So8NSObjectC", "SavedData"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "Tunnel"]
+- ["So8NSObjectC", "TunnelConnectionCloseDirection"]
+- ["So8NSObjectC", "TunnelConnectionOpenResult"]
+- ["So8NSObjectC", ""]
+- ["So8NSObjectC", "abort"]
+- !private ["So8NSObjectC", "addConnection"]
+- ["So8NSObjectC", "closeConnection"]
+- !private ["So8NSObjectC", "closeTunnel"]
+- ["So8NSObjectC", "currentCloseDirection"]
+- !private ["So8NSObjectC", "dropConnection"]
+- ["So8NSObjectC", "handleOpenCompleted"]
+- ["So8NSObjectC", "identifier"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "isClosedCompletely"]
+- ["So8NSObjectC", "isClosedForRead"]
+- ["So8NSObjectC", "isClosedForWrite"]
+- ["So8NSObjectC", "isExclusiveTunnel"]
+- ["So8NSObjectC", "resume"]
+- ["So8NSObjectC", "savedData"]
+- ["So8NSObjectC", "sendData"]
+- ["So8NSObjectC", "sendDataWithEndPoint"]
+- ["So8NSObjectC", "sendPackets"]
+- ["So8NSObjectC", "setNewTunnel"]
+- ["So8NSObjectC", "suspend"]
+- ["So8NSObjectC", "tunnel"]
+- ["So8NSObjectP", "AnyObject"]
+- ["So8NSObjectP", "Bool"]
+- ["So8NSObjectP", "Data"]
+- ["So8NSObjectP", "Int"]
+- ["So8NSObjectP", "NSNumber"]
+- ["So8NSObjectP", "NSObject"]
+- ["So8NSObjectP", "SavedData"]
+- ["So8NSObjectP", "String"]
+- ["So8NSObjectP", "Tunnel"]
+- ["So8NSObjectP", "TunnelConnectionCloseDirection"]
+- ["So8NSObjectP", "TunnelConnectionOpenResult"]
+- ["So8NSObjectP", ""]
+- ["So8NSObjectP", "abort"]
+- !private ["So8NSObjectP", "addConnection"]
+- ["So8NSObjectP", "closeConnection"]
+- !private ["So8NSObjectP", "closeTunnel"]
+- ["So8NSObjectP", "currentCloseDirection"]
+- !private ["So8NSObjectP", "dropConnection"]
+- ["So8NSObjectP", "handleOpenCompleted"]
+- ["So8NSObjectP", "identifier"]
+- ["So8NSObjectP", "init"]
+- ["So8NSObjectP", "isClosedCompletely"]
+- ["So8NSObjectP", "isClosedForRead"]
+- ["So8NSObjectP", "isClosedForWrite"]
+- ["So8NSObjectP", "isExclusiveTunnel"]
+- ["So8NSObjectP", "resume"]
+- ["So8NSObjectP", "savedData"]
+- ["So8NSObjectP", "sendData"]
+- ["So8NSObjectP", "sendDataWithEndPoint"]
+- ["So8NSObjectP", "sendPackets"]
+- ["So8NSObjectP", "setNewTunnel"]
+- ["So8NSObjectP", "suspend"]
+- ["So8NSObjectP", "tunnel"]
+- ["SY", "=="]
+- ["SY", "Default_RawValue"]
+- ["SY", "RawValue"]
+- ["SY", ""]
+- ["SY", "_Default_RawValue"]
+- ["SY", "_rawHashValue"]
+- ["SY", "all"]
+- ["SY", "description"]
+- ["SY", "hash"]
+- ["SY", "hashValue"]
+- ["SY", "init"]
+- ["SY", "none"]
+- ["SY", "rawValue"]
+- ["SY", "read"]
+- ["SY", "write"]
+- !private ["20SimpleTunnelServices9SavedDataC", "clear"]
+- ["20SimpleTunnelServices9SavedDataC", "init"]
+- !private ["20SimpleTunnelServices0B0C", "addConnection"]
+- !private ["20SimpleTunnelServices0B0C", "closeTunnel"]
+- !private ["20SimpleTunnelServices0B0C", "dropConnection"]
+- ["20SimpleTunnelServices0B24ConnectionCloseDirectionO", "=="]
+- ["20SimpleTunnelServices0B24ConnectionCloseDirectionO", "Default_RawValue"]
+- ["20SimpleTunnelServices0B24ConnectionCloseDirectionO", "RawValue"]
+- ["20SimpleTunnelServices0B24ConnectionCloseDirectionO", "String"]
+- ["20SimpleTunnelServices0B24ConnectionCloseDirectionO", ""]
+- ["20SimpleTunnelServices0B24ConnectionCloseDirectionO", "_Default_RawValue"]
+- ["20SimpleTunnelServices0B24ConnectionCloseDirectionO", "_rawHashValue"]
+- ["20SimpleTunnelServices0B24ConnectionCloseDirectionO", "all"]
+- ["20SimpleTunnelServices0B24ConnectionCloseDirectionO", "description"]
+- ["20SimpleTunnelServices0B24ConnectionCloseDirectionO", "hash"]
+- ["20SimpleTunnelServices0B24ConnectionCloseDirectionO", "hashValue"]
+- ["20SimpleTunnelServices0B24ConnectionCloseDirectionO", "init"]
+- ["20SimpleTunnelServices0B24ConnectionCloseDirectionO", "none"]
+- ["20SimpleTunnelServices0B24ConnectionCloseDirectionO", "rawValue"]
+- ["20SimpleTunnelServices0B24ConnectionCloseDirectionO", "read"]
+- ["20SimpleTunnelServices0B24ConnectionCloseDirectionO", "write"]
+- ["20SimpleTunnelServices0B20ConnectionOpenResultO", "=="]
+- ["20SimpleTunnelServices0B20ConnectionOpenResultO", "Default_RawValue"]
+- ["20SimpleTunnelServices0B20ConnectionOpenResultO", "RawValue"]
+- ["20SimpleTunnelServices0B20ConnectionOpenResultO", ""]
+- ["20SimpleTunnelServices0B20ConnectionOpenResultO", "_Default_RawValue"]
+- ["20SimpleTunnelServices0B20ConnectionOpenResultO", "_rawHashValue"]
+- ["20SimpleTunnelServices0B20ConnectionOpenResultO", "hash"]
+- ["20SimpleTunnelServices0B20ConnectionOpenResultO", "hashValue"]
+- ["20SimpleTunnelServices0B20ConnectionOpenResultO", "init"]
+- ["20SimpleTunnelServices0B20ConnectionOpenResultO", "internalError"]
+- ["20SimpleTunnelServices0B20ConnectionOpenResultO", "invalidParam"]
+- ["20SimpleTunnelServices0B20ConnectionOpenResultO", "noSuchHost"]
+- ["20SimpleTunnelServices0B20ConnectionOpenResultO", "rawValue"]
+- ["20SimpleTunnelServices0B20ConnectionOpenResultO", "refused"]
+- ["20SimpleTunnelServices0B20ConnectionOpenResultO", "success"]
+- ["20SimpleTunnelServices0B20ConnectionOpenResultO", "timeout"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "init"]
+- ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "SavedData"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "TunnelConnectionCloseDirection"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "abort"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addConnection"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "closeTunnel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "currentCloseDirection"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dropConnection"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "handleOpenCompleted"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "identifier"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isExclusiveTunnel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "resume"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "savedData"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "sendData"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "sendDataWithEndPoint"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "sendPackets"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setNewTunnel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "suspend"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tunnel"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "SavedData"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "TunnelConnectionCloseDirection"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "abort"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "addConnection"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "closeTunnel"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "currentCloseDirection"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "dropConnection"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "handleOpenCompleted"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "identifier"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "isExclusiveTunnel"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "resume"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "savedData"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "sendData"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "sendDataWithEndPoint"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "sendPackets"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setNewTunnel"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "suspend"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "tunnel"]
+depends-nominal:
+- "s7CVarArgP"
+- "20SimpleTunnelServices10ConnectionC"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "SQ"
+- "SH"
+- "So8NSCodingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- "SY"
+- "20SimpleTunnelServices9SavedDataC"
+- !private "20SimpleTunnelServices0B0C"
+- "20SimpleTunnelServices0B24ConnectionCloseDirectionO"
+- "20SimpleTunnelServices0B20ConnectionOpenResultO"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "10Foundation37_KeyValueCodingAndObservingPublishingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/XPC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreData.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreImage.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Combine.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/QuartzCore.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Network.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Metal.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Darwin.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreLocation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Foundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/IOKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CloudKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/AppKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/amit/Desktop/VISHAL/POC/SimpleTunnel-MacOs/SimpleTunnelServicesMac/SimpleTunnelServices.h"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/mach-o/dyld.modulemap"
+- "/Users/amit/Desktop/VISHAL/POC/SimpleTunnel-MacOs/build/SimpleTunnel.build/Debug/SimpleTunnelServicesMac.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/mach-o/compact_unwind_encoding.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/Network.framework/Headers/Network.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/NetworkExtension.framework/Headers/NetworkExtension.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/CloudKit.framework/Headers/CloudKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "5ee56ca6040586a2a763909ace10ffaa"

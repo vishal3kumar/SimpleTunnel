@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
+options: "4ae66b161fca601bff694ce363fe88a4"
+build_time: [1667804389, 249261000]
+inputs:
+  "/Users/amit/Desktop/VISHAL/POC/SimpleTunnel-MacOs/SimpleTunnel/ClientTunnelConnection.swift": [1667626635, 751139711]
+  "/Users/amit/Desktop/VISHAL/POC/SimpleTunnel-MacOs/PacketTunnel/PacketTunnelProvider.swift": [1667804388, 888483242]

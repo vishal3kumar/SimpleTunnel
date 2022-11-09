@@ -1,0 +1,382 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "interruptSignalSource"
+- "termSignalSource"
+- "ignore"
+- "portString"
+- "configurationPath"
+- "networkService"
+provides-nominal:
+provides-member:
+provides-dynamic-lookup:
+depends-top-level:
+- "!"
+- "<"
+- "AssignmentPrecedence"
+- "CommandLine"
+- "DispatchQueue"
+- "DispatchSource"
+- "FloatLiteralType"
+- "Int"
+- "Int32"
+- "IntegerLiteralType"
+- "NetService"
+- "RunLoop"
+- "SIGINT"
+- "SIGTERM"
+- "ServerTunnel"
+- "StringLiteralType"
+- "configurationPath"
+- "exit"
+- "ignore"
+- "interruptSignalSource"
+- "networkService"
+- "portString"
+- "print"
+- "signal"
+- "termSignalSource"
+depends-member:
+- ["s18AdditiveArithmeticP", ""]
+- ["s18AdditiveArithmeticP", "init"]
+- ["Sa", "count"]
+- ["Sa", "subscript"]
+- ["SK", ""]
+- ["SK", "count"]
+- ["SK", "subscript"]
+- ["Sz", ""]
+- ["Sz", "init"]
+- ["s7CVarArgP", "count"]
+- ["s7CVarArgP", "init"]
+- ["s7CVarArgP", "initializeWithConfigurationFile"]
+- ["s7CVarArgP", "main"]
+- ["s7CVarArgP", "makeSignalSource"]
+- ["s7CVarArgP", "run"]
+- ["s7CVarArgP", "startListeningOnPort"]
+- ["s7CVarArgP", "stop"]
+- ["s7CVarArgP", "subscript"]
+- ["Sl", ""]
+- ["Sl", "count"]
+- ["Sl", "subscript"]
+- ["s11CommandLineO", "arguments"]
+- ["SL", ""]
+- ["SL", "init"]
+- ["10Foundation15ContiguousBytesP", "count"]
+- ["10Foundation15ContiguousBytesP", "subscript"]
+- ["s28CustomDebugStringConvertibleP", "count"]
+- ["s28CustomDebugStringConvertibleP", "initializeWithConfigurationFile"]
+- ["s28CustomDebugStringConvertibleP", "main"]
+- ["s28CustomDebugStringConvertibleP", "makeSignalSource"]
+- ["s28CustomDebugStringConvertibleP", "run"]
+- ["s28CustomDebugStringConvertibleP", "startListeningOnPort"]
+- ["s28CustomDebugStringConvertibleP", "stop"]
+- ["s28CustomDebugStringConvertibleP", "subscript"]
+- ["s17CustomReflectableP", "count"]
+- ["s17CustomReflectableP", "init"]
+- ["s17CustomReflectableP", "subscript"]
+- ["s23CustomStringConvertibleP", ""]
+- ["s23CustomStringConvertibleP", "appendInterpolation"]
+- ["s23CustomStringConvertibleP", "appendLiteral"]
+- ["s23CustomStringConvertibleP", "count"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "initializeWithConfigurationFile"]
+- ["s23CustomStringConvertibleP", "main"]
+- ["s23CustomStringConvertibleP", "makeSignalSource"]
+- ["s23CustomStringConvertibleP", "run"]
+- ["s23CustomStringConvertibleP", "startListeningOnPort"]
+- ["s23CustomStringConvertibleP", "stop"]
+- ["s23CustomStringConvertibleP", "subscript"]
+- ["10Foundation12DataProtocolP", ""]
+- ["10Foundation12DataProtocolP", "count"]
+- ["10Foundation12DataProtocolP", "subscript"]
+- ["Se", "count"]
+- ["Se", "init"]
+- ["Se", "subscript"]
+- ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- ["s26DefaultStringInterpolationV", "appendLiteral"]
+- ["So18OS_dispatch_objectC", ""]
+- ["So18OS_dispatch_objectC", "init"]
+- ["So18OS_dispatch_objectC", "main"]
+- ["So18OS_dispatch_objectC", "makeSignalSource"]
+- ["So18OS_dispatch_objectC", "sync"]
+- ["So17OS_dispatch_queueC", "main"]
+- ["So18OS_dispatch_sourceC", "makeSignalSource"]
+- ["So24OS_dispatch_source_vnodeP", "makeSignalSource"]
+- ["So28OS_dispatch_source_mach_recvP", "makeSignalSource"]
+- ["So28OS_dispatch_source_mach_sendP", "makeSignalSource"]
+- ["So33OS_dispatch_source_memorypressureP", "makeSignalSource"]
+- ["So23OS_dispatch_source_procP", "makeSignalSource"]
+- ["So18OS_dispatch_sourceP", ""]
+- ["So18OS_dispatch_sourceP", "makeSignalSource"]
+- ["So18OS_dispatch_sourceP", "resume"]
+- ["So18OS_dispatch_sourceP", "setEventHandler"]
+- ["So23OS_dispatch_source_readP", "makeSignalSource"]
+- ["So25OS_dispatch_source_signalP", "makeSignalSource"]
+- ["So25OS_dispatch_source_signalP", "resume"]
+- ["So25OS_dispatch_source_signalP", "setEventHandler"]
+- ["So24OS_dispatch_source_timerP", "makeSignalSource"]
+- ["So27OS_dispatch_source_data_addP", "makeSignalSource"]
+- ["So26OS_dispatch_source_data_orP", "makeSignalSource"]
+- ["So31OS_dispatch_source_data_replaceP", "makeSignalSource"]
+- ["So24OS_dispatch_source_writeP", "makeSignalSource"]
+- ["SE", "count"]
+- ["SE", "init"]
+- ["SE", "subscript"]
+- ["SQ", ""]
+- ["SQ", "count"]
+- ["SQ", "init"]
+- ["SQ", "initializeWithConfigurationFile"]
+- ["SQ", "main"]
+- ["SQ", "makeSignalSource"]
+- ["SQ", "run"]
+- ["SQ", "startListeningOnPort"]
+- ["SQ", "stop"]
+- ["SQ", "subscript"]
+- ["s25ExpressibleByArrayLiteralP", ""]
+- ["s25ExpressibleByArrayLiteralP", "count"]
+- ["s25ExpressibleByArrayLiteralP", "subscript"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
+- ["s27ExpressibleByIntegerLiteralP", ""]
+- ["s27ExpressibleByIntegerLiteralP", "init"]
+- ["s32ExpressibleByStringInterpolationP", "StringInterpolation"]
+- ["s32ExpressibleByStringInterpolationP", ""]
+- ["s32ExpressibleByStringInterpolationP", "init"]
+- ["s26ExpressibleByStringLiteralP", ""]
+- ["s33ExpressibleByUnicodeScalarLiteralP", ""]
+- ["s17FixedWidthIntegerP", "init"]
+- ["SH", ""]
+- ["SH", "count"]
+- ["SH", "init"]
+- ["SH", "initializeWithConfigurationFile"]
+- ["SH", "main"]
+- ["SH", "makeSignalSource"]
+- ["SH", "run"]
+- ["SH", "startListeningOnPort"]
+- ["SH", "stop"]
+- ["SH", "subscript"]
+- ["Si", "init"]
+- ["s5Int32V", "init"]
+- ["s25LosslessStringConvertibleP", ""]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s10MirrorPathP", "init"]
+- ["SM", ""]
+- ["SM", "count"]
+- ["SM", "subscript"]
+- ["10Foundation19MutableDataProtocolP", "count"]
+- ["10Foundation19MutableDataProtocolP", "subscript"]
+- ["So8NSCodingP", ""]
+- ["So8NSObjectC", ""]
+- ["So8NSObjectC", "activate"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "initializeWithConfigurationFile"]
+- ["So8NSObjectC", "main"]
+- ["So8NSObjectC", "makeSignalSource"]
+- ["So8NSObjectC", "resume"]
+- ["So8NSObjectC", "run"]
+- ["So8NSObjectC", "runMode"]
+- ["So8NSObjectC", "runUntilDate"]
+- ["So8NSObjectC", "setTarget"]
+- ["So8NSObjectC", "startListeningOnPort"]
+- ["So8NSObjectC", "stop"]
+- ["So8NSObjectC", "suspend"]
+- ["So8NSObjectC", "sync"]
+- ["So8NSObjectP", ""]
+- ["So8NSObjectP", "activate"]
+- ["So8NSObjectP", "init"]
+- ["So8NSObjectP", "initializeWithConfigurationFile"]
+- ["So8NSObjectP", "main"]
+- ["So8NSObjectP", "makeSignalSource"]
+- ["So8NSObjectP", "resume"]
+- ["So8NSObjectP", "run"]
+- ["So8NSObjectP", "runMode"]
+- ["So8NSObjectP", "runUntilDate"]
+- ["So8NSObjectP", "setEventHandler"]
+- ["So8NSObjectP", "setTarget"]
+- ["So8NSObjectP", "startListeningOnPort"]
+- ["So8NSObjectP", "stop"]
+- ["So8NSObjectP", "suspend"]
+- ["So8NSObjectP", "sync"]
+- ["So12NSNetServiceC", "stop"]
+- ["Sj", ""]
+- ["Sj", "init"]
+- ["So9OS_objectC", ""]
+- ["So9OS_objectC", "activate"]
+- ["So9OS_objectC", "init"]
+- ["So9OS_objectC", "main"]
+- ["So9OS_objectC", "makeSignalSource"]
+- ["So9OS_objectC", "resume"]
+- ["So9OS_objectC", "setTarget"]
+- ["So9OS_objectC", "suspend"]
+- ["So9OS_objectC", "sync"]
+- ["Sk", ""]
+- ["Sk", "count"]
+- ["Sk", "subscript"]
+- ["Sm", ""]
+- ["Sm", "count"]
+- ["Sm", "subscript"]
+- ["So9NSRunLoopC", "main"]
+- ["So9NSRunLoopC", "run"]
+- ["s10SIMDScalarP", "init"]
+- ["7Combine9SchedulerP", "main"]
+- ["7Combine9SchedulerP", "run"]
+- ["ST", ""]
+- ["ST", "count"]
+- ["ST", "subscript"]
+- ["13tunnel_server12ServerTunnelC", "initializeWithConfigurationFile"]
+- ["13tunnel_server12ServerTunnelC", "startListeningOnPort"]
+- ["SZ", "init"]
+- ["s13SignedNumericP", ""]
+- ["s13SignedNumericP", "init"]
+- ["So16NSStreamDelegateP", "initializeWithConfigurationFile"]
+- ["So16NSStreamDelegateP", "startListeningOnPort"]
+- ["Sx", ""]
+- ["Sx", "init"]
+- ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- ["s27StringInterpolationProtocolP", "appendLiteral"]
+- ["s27StringInterpolationProtocolP", "init"]
+- ["s16TextOutputStreamP", ""]
+- ["s16TextOutputStreamP", "appendInterpolation"]
+- ["s16TextOutputStreamP", "appendLiteral"]
+- ["s20TextOutputStreamableP", ""]
+- ["13tunnel_server6TunnelC", ""]
+- ["13tunnel_server6TunnelC", "initializeWithConfigurationFile"]
+- ["13tunnel_server6TunnelC", "startListeningOnPort"]
+- ["13tunnel_server14TunnelDelegateP", "initializeWithConfigurationFile"]
+- ["13tunnel_server14TunnelDelegateP", "startListeningOnPort"]
+- ["s14_ArrayProtocolP", "count"]
+- ["s14_ArrayProtocolP", "subscript"]
+- ["s30_CustomPlaygroundQuickLookableP", "init"]
+- ["s24_DestructorSafeContainerP", "count"]
+- ["s24_DestructorSafeContainerP", "subscript"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
+- ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
+- ["s19_HasContiguousBytesP", "count"]
+- ["s19_HasContiguousBytesP", "subscript"]
+- ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "initializeWithConfigurationFile"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "main"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "makeSignalSource"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "run"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "startListeningOnPort"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "stop"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "initializeWithConfigurationFile"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "main"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "makeSignalSource"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "run"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "startListeningOnPort"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "stop"]
+- ["s21_ObjectiveCBridgeableP", "count"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- ["s21_ObjectiveCBridgeableP", "subscript"]
+depends-nominal:
+- "s18AdditiveArithmeticP"
+- "Sa"
+- "SK"
+- "Sz"
+- "s7CVarArgP"
+- "Sl"
+- "s11CommandLineO"
+- "SL"
+- "10Foundation15ContiguousBytesP"
+- "s28CustomDebugStringConvertibleP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "10Foundation12DataProtocolP"
+- "Se"
+- "s26DefaultStringInterpolationV"
+- "So18OS_dispatch_objectC"
+- "So17OS_dispatch_queueC"
+- "So18OS_dispatch_sourceC"
+- "So24OS_dispatch_source_vnodeP"
+- "So28OS_dispatch_source_mach_recvP"
+- "So28OS_dispatch_source_mach_sendP"
+- "So33OS_dispatch_source_memorypressureP"
+- "So23OS_dispatch_source_procP"
+- "So18OS_dispatch_sourceP"
+- "So23OS_dispatch_source_readP"
+- "So25OS_dispatch_source_signalP"
+- "So24OS_dispatch_source_timerP"
+- "So27OS_dispatch_source_data_addP"
+- "So26OS_dispatch_source_data_orP"
+- "So31OS_dispatch_source_data_replaceP"
+- "So24OS_dispatch_source_writeP"
+- "SE"
+- "SQ"
+- "s25ExpressibleByArrayLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s27ExpressibleByIntegerLiteralP"
+- "s32ExpressibleByStringInterpolationP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- "s17FixedWidthIntegerP"
+- "SH"
+- "Si"
+- "s5Int32V"
+- "s25LosslessStringConvertibleP"
+- "s10MirrorPathP"
+- "SM"
+- "10Foundation19MutableDataProtocolP"
+- "So8NSCodingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- "So12NSNetServiceC"
+- "Sj"
+- "So9OS_objectC"
+- "Sk"
+- "Sm"
+- "So9NSRunLoopC"
+- "s10SIMDScalarP"
+- "7Combine9SchedulerP"
+- "ST"
+- "13tunnel_server12ServerTunnelC"
+- "SZ"
+- "s13SignedNumericP"
+- "So16NSStreamDelegateP"
+- "Sx"
+- "s27StringInterpolationProtocolP"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- "13tunnel_server6TunnelC"
+- "13tunnel_server14TunnelDelegateP"
+- "s14_ArrayProtocolP"
+- "s30_CustomPlaygroundQuickLookableP"
+- "s24_DestructorSafeContainerP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s35_ExpressibleByBuiltinIntegerLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s19_HasContiguousBytesP"
+- "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/XPC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Combine.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Darwin.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Foundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/IOKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/amit/Desktop/VISHAL/POC/SimpleTunnel-MacOs/tunnel_server/tunnel_server-Bridging-Header.h"
+- "/Users/amit/Desktop/VISHAL/POC/SimpleTunnel-MacOs/tunnel_server/ServerUtils.h"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/mach-o/dyld.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/mach-o/compact_unwind_encoding.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "d90a3d304452a0787ad74dd7bcdabc70"
