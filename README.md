@@ -32,7 +32,9 @@ All of the sample extensions are packaged into the SimpleTunnel app. The SimpleT
 
 The SimpleTunnel project contains both the client and server sides of a custom network tunneling protocol. The Packet Tunnel Provider and App Proxy Provider extensions implement the client side. The tunnel_server target produces a OS X command-line binary that implements the server side. The server is configured using a plist. A sample plist is included in the tunnel_erver source. To run the server, use this command:
 
-sudo tunnel_server <port> <path-to-config-plist>
+**sudo tunnel_server <port> <path-to-config-plist>**
+	
+	
 
 # Requirements
 
