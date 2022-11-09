@@ -1,10 +1,16 @@
 # My Notes:
 
 1) Update the code with new server address at: 
+
 	SimpleTunnel/mac/ViewController.swift:
+	
 		config.serverAddress = "10.213.175.17:8890"
+		
+		
 	check whether u need to update at:
+	
 		SimpleTunnel/PacketTunnel/PacketTunnelProvider.swif: NEPacketTunnelNetworkSettings(tunnelRemoteAddress: tunnelAddress)
+		
 2) You need to compile 'mac' project, this project include 'Application Extension' -> Packet Tunnel Provider (Please note this is different from System Extension: PacketTunnelProvider). 
 3) Then you need to compile 'tunnel_server' which we have to run at tunnel destination server. 
 4) Then run the tunnel server with below config file:
