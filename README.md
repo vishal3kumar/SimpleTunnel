@@ -17,25 +17,25 @@
 	tunnel_server <port> <config-file>
 	Config file sample: SimpleTunnel/tunnel_server/config.plist
 	
-	# enable IP forwarding and firewall in the kernel: refer: https://gist.github.com/ozel/93c48ff291b83ac648278f0562167b7e
+	// enable IP forwarding and firewall in the kernel: refer: https://gist.github.com/ozel/93c48ff291b83ac648278f0562167b7e
 	sudo sysctl -w net.inet.ip.forwarding=1
 	sudo sysctl -w net.inet.ip.fw.enable=1
 
-	#flush all FW rules 
+	//flush all FW rules 
 	sudo pfctl -F all # or -F nat, for just the nat rules
 
 	cat ./nat-rules 
-	nat on en0 from 192.168.1.0/24 to any -> 10.213.175.17 #put this line in a text file
+	nat on en0 from 192.168.2.0/24 to any -> 10.213.175.17 #put this line in a text file
 
-	# en0 is the interface pointing to the network with internet access
-	# 10.213.175.17 is the local hostname or ip associated with the network that has internet access
-	# 192.168.1.0/24 is a separate network that shall get internet via ozelmacpro on interface en0
-	# final hint on this via https://discussions.apple.com/thread/6757798?start=0&tstart=0
+	// en0 is the interface pointing to the network with internet access
+	// 10.213.175.17 is the local hostname or ip associated with the network that has internet access
+	// 192.168.2.0/24 is a separate network that shall get internet via ozelmacpro on interface en0
+	// final hint on this via https://discussions.apple.com/thread/6757798?start=0&tstart=0
 
-	# load NAT rules from file
+	// load NAT rules from file
 	sudo pfctl -f nat-rules -e
 
-	# list all FW config
+	// list all FW config
 	sudo pfctl -s all
 	
 ============================================
