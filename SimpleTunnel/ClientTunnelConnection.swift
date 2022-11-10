@@ -89,7 +89,10 @@ class ClientTunnelConnection: Connection {
 	// MARK: Connection
 
 	/// Handle the event of the connection being established.
-	override func handleOpenCompleted(_ resultCode: TunnelConnectionOpenResult, properties: [NSObject: AnyObject]) {
+	override func handleOpenCompleted(_ resultCode: TunnelConnectionOpenResult, properties: [NSObject: AnyObject])
+    {
+        NSLog("Creating tunnel...handleOpenCompleteds)")
+
 		guard resultCode == .success else {
 			delegate.tunnelConnectionDidClose(self, error: SimpleTunnelError.badConnection as NSError)
 			return
@@ -97,9 +100,11 @@ class ClientTunnelConnection: Connection {
 
 		// Pass the tunnel network settings to the delegate.
 		if let configuration = properties[TunnelMessageKey.Configuration.rawValue as NSString] as? [NSObject: AnyObject] {
+            NSLog("Creating tunnel...tunnelConnectionDidOpen")
 			delegate.tunnelConnectionDidOpen(self, configuration: configuration)
 		}
 		else {
+            NSLog("Creating tunnel...tunnelConnectionDidOpen without config")
 			delegate.tunnelConnectionDidOpen(self, configuration: [:])
 		}
 	}

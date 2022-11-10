@@ -153,7 +153,7 @@ depends-member:
 - !private ["SM", ""]
 - !private ["SM", "init"]
 - !private ["10Foundation19MutableDataProtocolP", "init"]
-- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", ""]
 - ["So8NSObjectC", ""]
 - !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "inputStreamWithData"]
@@ -163,7 +163,6 @@ depends-member:
 - !private ["So8NSObjectC", "propertyList"]
 - !private ["So8NSObjectC", "propertyListWithData"]
 - !private ["So8NSObjectC", "propertyListWithStream"]
-- ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "inputStreamWithData"]
 - !private ["So8NSObjectP", "inputStreamWithFileAtPath"]
@@ -300,9 +299,9 @@ depends-nominal:
 - !private "So31NSPropertyListMutabilityOptionsV"
 - !private "SM"
 - !private "10Foundation19MutableDataProtocolP"
-- "So8NSCodingP"
+- !private "So8NSCodingP"
 - "So8NSObjectC"
-- "So8NSObjectP"
+- !private "So8NSObjectP"
 - !private "s9OptionSetP"
 - !private "So27NSPropertyListSerializationC"
 - !private "Sk"
@@ -341,8 +340,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/IOKit.swiftmodule/x86_64-apple-macos.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
-- "/Users/amit/Desktop/VISHAL/POC/SimpleTunnel-MacOs/tunnel_server/tunnel_server-Bridging-Header.h"
-- "/Users/amit/Desktop/VISHAL/POC/SimpleTunnel-MacOs/tunnel_server/ServerUtils.h"
+- "/Users/amit/Desktop/VISHAL/POC/SimpleTunnel_pesonal/tunnel_server/tunnel_server-Bridging-Header.h"
+- "/Users/amit/Desktop/VISHAL/POC/SimpleTunnel_pesonal/tunnel_server/ServerUtils.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/mach-o/dyld.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/mach-o/compact_unwind_encoding.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/xpc/XPC.apinotes"

@@ -28,7 +28,7 @@ depends-top-level:
 - "NETunnelProviderManager"
 - !private "NETunnelProviderProtocol"
 - "NETunnelProviderSession"
-- !private "NSLog"
+- "NSLog"
 - "NSViewController"
 - "String"
 - "StringLiteralType"

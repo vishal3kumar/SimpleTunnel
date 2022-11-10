@@ -65,6 +65,7 @@ class ServerTunnel: Tunnel, TunnelDelegate, StreamDelegate {
 
 	/// Load the configuration from disk.
 	class func initializeWithConfigurationFile(path: String) -> Bool {
+        simpleTunnelLog("Loading config from file: (\(path))");
         return ServerTunnel.configuration.loadFromFileAtPath(path: path)
 	}
 

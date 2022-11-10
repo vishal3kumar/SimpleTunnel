@@ -3,11 +3,11 @@
   'case-sensitive': 'false',
   'roots': [{
     'type': 'directory',
-    'name': "/Users/amit/Desktop/VISHAL/POC/SimpleTunnel-MacOs/build/Debug/SimpleTunnelServices.framework/Modules"
+    'name': "/Users/amit/Desktop/VISHAL/POC/SimpleTunnel_pesonal/build/Debug/SimpleTunnelServices.framework/Modules"
     'contents': [{
       'type': 'file',
       'name': "module.modulemap",
-      'external-contents': "/Users/amit/Desktop/VISHAL/POC/SimpleTunnel-MacOs/build/SimpleTunnel.build/Debug/SimpleTunnelServicesMac.build/unextended-module.modulemap",
+      'external-contents': "/Users/amit/Desktop/VISHAL/POC/SimpleTunnel_pesonal/build/SimpleTunnel.build/Debug/SimpleTunnelServicesMac.build/unextended-module.modulemap",
     }]
   }]
 }

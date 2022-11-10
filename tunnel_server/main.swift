@@ -24,14 +24,16 @@ if CommandLine.arguments.count < 3 {
 
 func ignore(_: Int32)  {
 }
-signal(SIGTERM, ignore)
-signal(SIGINT, ignore)
+//signal(SIGTERM, ignore)
+//signal(SIGINT, ignore)
 
 let portString = CommandLine.arguments[1]
 let configurationPath = CommandLine.arguments[2]
 let networkService: NetService
 
 // Initialize the server.
+simpleTunnelLog("Initialize the server");
+
 
 if !ServerTunnel.initializeWithConfigurationFile(path: configurationPath) {
 	exit(1)

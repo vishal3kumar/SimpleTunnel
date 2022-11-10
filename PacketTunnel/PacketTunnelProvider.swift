@@ -122,6 +122,7 @@ class PacketTunnelProvider: NEPacketTunnelProvider, TunnelDelegate, ClientTunnel
 		}
 
 		// Set the virtual interface settings.
+        NSLog("Creating tunnel...Set the virtual interface settings")
 		setTunnelNetworkSettings(settings) { error in
 			var startError: Error?
 			if let error = error {
@@ -151,10 +152,31 @@ class PacketTunnelProvider: NEPacketTunnelProvider, TunnelDelegate, ClientTunnel
 			let address = getValueFromPlist(configuration, keyArray: [.IPv4, .Address]) as? String,
 			let netmask = getValueFromPlist(configuration, keyArray: [.IPv4, .Netmask]) as? String
 			else { return nil }
-
+        
+        /*
+         Sample config:
+         Creating tunnel... createTunnelSettingsFromConfiguration: configuration: {
+             DNS =     {
+                 SearchDomains =         (
+                 );
+                 Servers =         (
+                     "10.212.24.222"
+                 );
+             };
+             IPv4 =     {
+                 Address = "192.168.2.2";
+                 Netmask = "255.255.255.255";
+             };
+         }
+         
+         */
+        NSLog("Creating tunnel... createTunnelSettingsFromConfiguration: configuration: %@", configuration);
+        
+        NSLog("Creating tunnel... tunnelAddress: %@", tunnelAddress);
 		let newSettings = NEPacketTunnelNetworkSettings(tunnelRemoteAddress: tunnelAddress)
 		var fullTunnel = true
 
+        NSLog("Creating tunnel... ipv4Settings222: %@, netmask: %@", address, netmask);
 		newSettings.ipv4Settings = NEIPv4Settings(addresses: [address], subnetMasks: [netmask])
 
 		if let routes = getValueFromPlist(configuration, keyArray: [.IPv4, .Routes]) as? [[String: AnyObject]] {
@@ -163,20 +185,36 @@ class PacketTunnelProvider: NEPacketTunnelProvider, TunnelDelegate, ClientTunnel
 				if let netAddress = route[SettingsKey.Address.rawValue] as? String,
 					let netMask = route[SettingsKey.Netmask.rawValue] as? String
 				{
+                    NSLog("Creating tunnel... includedRoutes: %@", netAddress);
 					includedRoutes.append(NEIPv4Route(destinationAddress: netAddress, subnetMask: netMask))
 				}
 			}
+            
 			newSettings.ipv4Settings?.includedRoutes = includedRoutes
 			fullTunnel = false
 		}
 		else {
 			// No routes specified, use the default route.
-			newSettings.ipv4Settings?.includedRoutes = [NEIPv4Route.default()]
+			/*newSettings.ipv4Settings?.includedRoutes = [NEIPv4Route.default()]
+            fullTunnel = true*/
+            
+            /* Hard  code the routes */
+            var includedRoutes = [NEIPv4Route]()
+            var excludedRoutes = [NEIPv4Route]()
+            NSLog("Creating tunnel... includedRoutes: 20.20.20.0");
+            //includedRoutes.append(NEIPv4Route(destinationAddress: "142.250.195.0", subnetMask: "255.255.255.0"))
+            includedRoutes.append(NEIPv4Route(destinationAddress: "20.20.20.0", subnetMask: "255.255.255.0"))
+            excludedRoutes.append(NEIPv4Route(destinationAddress: "20.20.20.10", subnetMask: "255.255.255.255"))
+
+            newSettings.ipv4Settings?.includedRoutes = includedRoutes
+            newSettings.ipv4Settings?.excludedRoutes = excludedRoutes
+
 		}
 
 		if let DNSDictionary = configuration[SettingsKey.DNS.rawValue as NSString] as? [String: AnyObject],
 			let DNSServers = DNSDictionary[SettingsKey.Servers.rawValue] as? [String]
 		{
+            NSLog("Creating tunnel... Configurating DNS from server configuration: %@", DNSServers);
 			newSettings.dnsSettings = NEDNSSettings(servers: DNSServers)
 			if let DNSSearchDomains = DNSDictionary[SettingsKey.SearchDomains.rawValue] as? [String] {
 				newSettings.dnsSettings?.searchDomains = DNSSearchDomains
@@ -184,9 +222,18 @@ class PacketTunnelProvider: NEPacketTunnelProvider, TunnelDelegate, ClientTunnel
 					newSettings.dnsSettings?.matchDomains = DNSSearchDomains
 				}
 			}
-		}
+        }
+        // let us hard code the dns for testing
+        NSLog("Creating tunnel... let us hard code the dns for testing");
+        //newSettings.dnsSettings = NEDNSSettings(servers: ["8.8.8.8", "1.1.1.1"])
+        newSettings.dnsSettings = NEDNSSettings(servers: ["8.8.8.8"])
+        newSettings.dnsSettings?.searchDomains = ["test1", "test2.com", "test3.com", "ttest1.com"]
+        newSettings.dnsSettings?.matchDomains = ["test4.com", "test5.com", "test6.com", "test1.com"]
+        newSettings.dnsSettings?.matchDomainsNoSearch = true
+        
 
 		newSettings.tunnelOverheadBytes = 150
+        os_log("Creating tunnel...: Did setup tunnel settings: %{public}@, error: %{public}@", "\(newSettings)")
 
 		return newSettings
 	}

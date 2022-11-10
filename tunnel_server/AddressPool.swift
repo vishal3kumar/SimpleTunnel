@@ -28,6 +28,7 @@ class AddressPool {
 	// MARK: Initializers
 	
 	init(startAddress: String, endAddress: String) {
+        simpleTunnelLog("AddressPool: start address (\(startAddress))  end address (\(endAddress)) ");
 		baseAddress = SocketAddress()
         inUseMask = [Bool](repeating: false, count: 0)
         queue = DispatchQueue(label: "AddressPoolQueue")
@@ -67,6 +68,7 @@ class AddressPool {
 		var result: String?
 
         queue.sync() {
+            simpleTunnelLog("Server allocateAddress (\(self.baseAddress))")
 			let address = SocketAddress(otherAddress: self.baseAddress)
 
 			// Look for an address that is not currently allocated

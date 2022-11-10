@@ -43,7 +43,7 @@ class ServerTunnelConnection: Connection {
 
 	/// "Open" the connection by setting up the UTUN interface.
 	func open() -> Bool {
-        simpleTunnelLog("Vishal:: open: the connection by setting up the UTUN interface")
+        simpleTunnelLog("Vishal:: open: the connection by setting up the UTUN interface222")
 		// Allocate the tunnel virtual address.
 		guard let address = ServerTunnel.configuration.addressPool?.allocateAddress() else {
 			simpleTunnelLog("Failed to allocate a tunnel address")
@@ -52,6 +52,7 @@ class ServerTunnelConnection: Connection {
 		}
 
 		// Create the virtual interface and assign the address.
+        simpleTunnelLog("setupVirtualInterface::::::");
         guard setupVirtualInterface(address: address) else {
 			simpleTunnelLog("Failed to set up the virtual interface")
             ServerTunnel.configuration.addressPool?.deallocateAddress(addrString: address)
@@ -63,6 +64,7 @@ class ServerTunnelConnection: Connection {
 
 		var response = [String: AnyObject]()
 
+        simpleTunnelLog("Creating configuration for VPN Client")
 		// Create a copy of the configuration, so that it can be personalized with the tunnel virtual interface.
 		var personalized = ServerTunnel.configuration.configuration
 		guard let IPv4Dictionary = personalized[SettingsKey.IPv4.rawValue] as? [String: Any] else {
@@ -71,6 +73,7 @@ class ServerTunnelConnection: Connection {
 			return false
 		}
 
+        simpleTunnelLog("tunnelAddress::: (\(tunnelAddress))")
 		// Set up the "IPv4" sub-dictionary to contain the tunne virtual address and network mask.
 		var newIPv4Dictionary = IPv4Dictionary
 		newIPv4Dictionary[SettingsKey.Address.rawValue] = tunnelAddress

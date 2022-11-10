@@ -31,10 +31,12 @@ depends-top-level:
 - !private "Int"
 - "NEPacketTunnelFlow"
 - "NSError"
+- !private "NSLog"
 - "NSNumber"
 - "NSObject"
 - "NSString"
 - !private "SimpleTunnelError"
+- !private "StringLiteralType"
 - "TunnelConnectionOpenResult"
 - !private "TunnelLayer"
 - !private "TunnelMessageKey"
@@ -51,6 +53,7 @@ depends-member:
 - !private ["Sz", "init"]
 - !private ["8CloudKit21CKRecordValueProtocolP", "init"]
 - !private ["s7CVarArgP", "Int"]
+- !private ["s7CVarArgP", "NSLog"]
 - !private ["s7CVarArgP", "SimpleTunnelError"]
 - !private ["s7CVarArgP", "TunnelLayer"]
 - !private ["s7CVarArgP", "TunnelMessageKey"]
@@ -77,6 +80,7 @@ depends-member:
 - !private ["16PacketTunnel_Mac06ClientB10ConnectionC", "Int"]
 - ["16PacketTunnel_Mac06ClientB10ConnectionC", "NEPacketTunnelFlow"]
 - !private ["16PacketTunnel_Mac06ClientB10ConnectionC", "NSError"]
+- !private ["16PacketTunnel_Mac06ClientB10ConnectionC", "NSLog"]
 - ["16PacketTunnel_Mac06ClientB10ConnectionC", "NSNumber"]
 - ["16PacketTunnel_Mac06ClientB10ConnectionC", "NSObject"]
 - !private ["16PacketTunnel_Mac06ClientB10ConnectionC", "NSString"]
@@ -114,6 +118,7 @@ depends-member:
 - !private ["20SimpleTunnelServices10ConnectionC", "Int"]
 - ["20SimpleTunnelServices10ConnectionC", "NEPacketTunnelFlow"]
 - !private ["20SimpleTunnelServices10ConnectionC", "NSError"]
+- !private ["20SimpleTunnelServices10ConnectionC", "NSLog"]
 - ["20SimpleTunnelServices10ConnectionC", "NSNumber"]
 - ["20SimpleTunnelServices10ConnectionC", "NSObject"]
 - !private ["20SimpleTunnelServices10ConnectionC", "NSString"]
@@ -135,6 +140,7 @@ depends-member:
 - ["20SimpleTunnelServices10ConnectionC", "startHandlingPackets"]
 - !private ["20SimpleTunnelServices10ConnectionC", "tunnel"]
 - !private ["s28CustomDebugStringConvertibleP", "Int"]
+- !private ["s28CustomDebugStringConvertibleP", "NSLog"]
 - !private ["s28CustomDebugStringConvertibleP", "SimpleTunnelError"]
 - !private ["s28CustomDebugStringConvertibleP", "TunnelLayer"]
 - !private ["s28CustomDebugStringConvertibleP", "TunnelMessageKey"]
@@ -156,6 +162,7 @@ depends-member:
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "Int"]
+- !private ["s23CustomStringConvertibleP", "NSLog"]
 - !private ["s23CustomStringConvertibleP", "SimpleTunnelError"]
 - !private ["s23CustomStringConvertibleP", "TunnelLayer"]
 - !private ["s23CustomStringConvertibleP", "TunnelMessageKey"]
@@ -184,6 +191,7 @@ depends-member:
 - !private ["SQ", "=="]
 - !private ["SQ", "Configuration"]
 - !private ["SQ", "Int"]
+- !private ["SQ", "NSLog"]
 - !private ["SQ", "Packets"]
 - !private ["SQ", "Protocols"]
 - !private ["SQ", "SimpleTunnelError"]
@@ -221,6 +229,7 @@ depends-member:
 - !private ["s17FixedWidthIntegerP", "init"]
 - !private ["SH", "Configuration"]
 - !private ["SH", "Int"]
+- !private ["SH", "NSLog"]
 - !private ["SH", "Packets"]
 - !private ["SH", "Protocols"]
 - !private ["SH", "SimpleTunnelError"]
@@ -262,6 +271,7 @@ depends-member:
 - !private ["So8NSObjectC", "Int"]
 - ["So8NSObjectC", "NEPacketTunnelFlow"]
 - !private ["So8NSObjectC", "NSError"]
+- !private ["So8NSObjectC", "NSLog"]
 - ["So8NSObjectC", "NSNumber"]
 - ["So8NSObjectC", "NSObject"]
 - !private ["So8NSObjectC", "NSString"]
@@ -293,6 +303,7 @@ depends-member:
 - !private ["So8NSObjectP", "Int"]
 - ["So8NSObjectP", "NEPacketTunnelFlow"]
 - !private ["So8NSObjectP", "NSError"]
+- !private ["So8NSObjectP", "NSLog"]
 - ["So8NSObjectP", "NSNumber"]
 - ["So8NSObjectP", "NSObject"]
 - !private ["So8NSObjectP", "NSString"]
@@ -356,6 +367,7 @@ depends-member:
 - !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Int"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NSLog"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "SimpleTunnelError"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "TunnelLayer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "TunnelMessageKey"]
@@ -374,6 +386,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "tunnel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "writePackets"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Int"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "NSLog"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "SimpleTunnelError"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "TunnelLayer"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "TunnelMessageKey"]
@@ -464,16 +477,17 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Foundation.swiftmodule/x86_64-apple-macos.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-macos.swiftmodule"
-- "/Users/amit/Desktop/VISHAL/POC/SimpleTunnel-MacOs/build/Debug/SimpleTunnelServices.framework/Modules/SimpleTunnelServices.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/amit/Desktop/VISHAL/POC/SimpleTunnel_pesonal/build/Debug/SimpleTunnelServices.framework/Modules/SimpleTunnelServices.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/os.swiftmodule/x86_64-apple-macos.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/IOKit.swiftmodule/x86_64-apple-macos.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CloudKit.swiftmodule/x86_64-apple-macos.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/AppKit.swiftmodule/x86_64-apple-macos.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
-- "/Users/amit/Desktop/VISHAL/POC/SimpleTunnel-MacOs/SimpleTunnelServicesMac/SimpleTunnelServices.h"
-- "/Users/amit/Desktop/VISHAL/POC/SimpleTunnel-MacOs/build/Debug/SimpleTunnelServices.framework/Headers/SimpleTunnelServices-Swift.h"
+- "/Users/amit/Desktop/VISHAL/POC/SimpleTunnel_pesonal/SimpleTunnelServicesMac/SimpleTunnelServices.h"
+- "/Users/amit/Desktop/VISHAL/POC/SimpleTunnel_pesonal/build/Debug/SimpleTunnelServices.framework/Headers/SimpleTunnelServices-Swift.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/mach-o/dyld.modulemap"
-- "/Users/amit/Desktop/VISHAL/POC/SimpleTunnel-MacOs/build/SimpleTunnel.build/Debug/SimpleTunnelServicesMac.build/module.modulemap"
+- "/Users/amit/Desktop/VISHAL/POC/SimpleTunnel_pesonal/build/SimpleTunnel.build/Debug/SimpleTunnelServicesMac.build/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/mach-o/compact_unwind_encoding.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/xpc/XPC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/objc/ObjectiveC.apinotes"
@@ -489,6 +503,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/os.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/CloudKit.framework/Headers/CloudKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"

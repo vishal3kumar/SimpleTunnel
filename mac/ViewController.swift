@@ -53,7 +53,7 @@ class ViewController: NSViewController {
             config.providerBundleIdentifier = "com.mcafee.mcpdev.networkextension"
         #endif
         //config.serverAddress = "192.168.11.9:8890"
-        config.serverAddress = "10.213.175.248:8890"
+        config.serverAddress = "10.213.175.17:8890"
         
         let manager = NETunnelProviderManager()
         manager.protocolConfiguration = config
@@ -120,7 +120,7 @@ class ViewController: NSViewController {
                             if let responseString = String.init(data:response , encoding: .utf8){
                                 _ = responseString.components(separatedBy: ":")
                                 
-                                print("Received response from the provider: \(responseString)")
+                                NSLog("Received response from the provider: \(responseString)")
                             }
                             
                             //self.registerStatus()

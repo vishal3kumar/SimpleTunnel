@@ -238,9 +238,10 @@ open class ClientTunnel: Tunnel {
 	/// Handle a message received from the tunnel server.
 	override func handleMessage(_ commandType: TunnelCommand, properties: [String: AnyObject], connection: Connection?) -> Bool {
 		var success = true
-
+        NSLog("Creating tunnel...message recieved from server2");
 		switch commandType {
 			case .openResult:
+                NSLog("Creating tunnel...cmd recvd: openResult");
 				// A logical connection was opened successfully.
 				guard let targetConnection = connection,
 					let resultCodeNumber = properties[TunnelMessageKey.ResultCode.rawValue] as? Int,
@@ -254,13 +255,14 @@ open class ClientTunnel: Tunnel {
 				targetConnection.handleOpenCompleted(resultCode, properties:properties as [NSObject : AnyObject])
 
 			case .fetchConfiguration:
+                NSLog("Creating tunnel...cmd recvd: tunnelDidSendConfiguration");
 				guard let configuration = properties[TunnelMessageKey.Configuration.rawValue] as? [String: AnyObject]
 					else { break }
 
 				delegate?.tunnelDidSendConfiguration(self, configuration: configuration)
 			
 			default:
-				simpleTunnelLog("Tunnel received an invalid command")
+				simpleTunnelLog("Creating tunnel...Tunnel received an invalid command")
 				success = false
 		}
 		return success

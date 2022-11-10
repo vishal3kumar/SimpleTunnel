@@ -56,7 +56,7 @@ class ServerConfiguration {
 			simpleTunnelLog("Missing v4 end address")
 			return false
 		}
-
+        simpleTunnelLog("Initialize Address Pool.");
 		addressPool = AddressPool(startAddress: startAddress, endAddress: endAddress)
 
 		// The configuration dictionary gets sent to clients as the tunnel settings dictionary. Remove the IP pool parameters.
