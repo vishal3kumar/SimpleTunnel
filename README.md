@@ -1,3 +1,45 @@
+# My Notes:
+
+1) Update the code with new server address at: 
+
+	SimpleTunnel/mac/ViewController.swift:
+	
+		config.serverAddress = "10.213.175.17:8890"
+		
+		
+	check whether u need to update at:
+	
+		SimpleTunnel/PacketTunnel/PacketTunnelProvider.swif: NEPacketTunnelNetworkSettings(tunnelRemoteAddress: tunnelAddress)
+		
+2) You need to compile 'mac' project, this project include 'Application Extension' -> Packet Tunnel Provider (Please note this is different from System Extension: PacketTunnelProvider). 
+3) Then you need to compile 'tunnel_server' which we have to run at tunnel destination server. 
+4) Then run the tunnel server with below config file: 
+	tunnel_server <port> <config-file>
+	Config file sample: SimpleTunnel/tunnel_server/config.plist
+	
+	# enable IP forwarding and firewall in the kernel: refer: https://gist.github.com/ozel/93c48ff291b83ac648278f0562167b7e
+	sudo sysctl -w net.inet.ip.forwarding=1
+	sudo sysctl -w net.inet.ip.fw.enable=1
+
+	#flush all FW rules 
+	sudo pfctl -F all # or -F nat, for just the nat rules
+
+	cat ./nat-rules 
+	nat on en0 from 192.168.1.0/24 to any -> 10.213.175.17 #put this line in a text file
+
+	# en0 is the interface pointing to the network with internet access
+	# 10.213.175.17 is the local hostname or ip associated with the network that has internet access
+	# 192.168.1.0/24 is a separate network that shall get internet via ozelmacpro on interface en0
+	# final hint on this via https://discussions.apple.com/thread/6757798?start=0&tstart=0
+
+	# load NAT rules from file
+	sudo pfctl -f nat-rules -e
+
+	# list all FW config
+	sudo pfctl -s all
+	
+============================================
+
 # SimpleTunnel: Customized Networking Using the NetworkExtension Framework
 
 The SimpleTunnel project contains working examples of the four extension points provided by the Network Extension framework:
@@ -20,7 +62,9 @@ All of the sample extensions are packaged into the SimpleTunnel app. The SimpleT
 
 The SimpleTunnel project contains both the client and server sides of a custom network tunneling protocol. The Packet Tunnel Provider and App Proxy Provider extensions implement the client side. The tunnel_server target produces a OS X command-line binary that implements the server side. The server is configured using a plist. A sample plist is included in the tunnel_erver source. To run the server, use this command:
 
-sudo tunnel_server <port> <path-to-config-plist>
+**sudo tunnel_server \<port\> \<path-to-config-plist\>**
+	
+	
 
 # Requirements
 
